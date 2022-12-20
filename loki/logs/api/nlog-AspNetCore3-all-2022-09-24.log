@@ -1,0 +1,5 @@
+datetime="2022-09-24 01:36:39.7930" eventId=0 logLevel="DEBUG" logger="PedeLogo.Catalogo.Api.Program" message="init main" exception=""
+datetime="2022-09-24 01:36:40.3119" eventId=0 logLevel="INFO" logger="Microsoft.Hosting.Lifetime" message="Now listening on: http://[::]:80" exception=""
+datetime="2022-09-24 01:36:40.3253" eventId=0 logLevel="INFO" logger="Microsoft.Hosting.Lifetime" message="Application started. Press Ctrl+C to shut down." exception=""
+datetime="2022-09-24 01:36:40.3253" eventId=0 logLevel="INFO" logger="Microsoft.Hosting.Lifetime" message="Hosting environment: Production" exception=""
+datetime="2022-09-24 01:36:40.3253" eventId=0 logLevel="INFO" logger="Microsoft.Hosting.Lifetime" message="Content root path: /app" exception=""

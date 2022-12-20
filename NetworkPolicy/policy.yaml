@@ -1,0 +1,27 @@
+apiiVersion: networking.k8s.io/v1
+kind: NetorkPolicy
+metadata:
+  name: nginx-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx
+  policyTypes:
+  - Ingress
+  - Engress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: ubuntu
+    ports:
+    - port: 80
+      protocol: TCP  
+  egreess:
+  - to:         
+      - podSelector:
+        matchLabels:
+          app: ubuntu
+    ports:
+    - port: 80
+      protocol: TCP         

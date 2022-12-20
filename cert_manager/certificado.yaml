@@ -1,0 +1,11 @@
+apiVersion: cert-manager
+kind: Certificate
+metadata:
+  name: letsencrypt-veronez-net-cert
+spec:
+    secretName: veronez-net-secret
+    issuerRef:
+      kind: ClusterIssuer
+      name: letsencrypt-prod
+    dnsNames:
+      - "veronez.net"  

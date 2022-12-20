@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxBBB
+spec:
+  selector:
+    matchLabels:
+      app: nginxBBB
+  template:
+    metadata:
+      labels:
+        app: nginxBBB
+    spec:
+      containers:
+      - name: nginxBBB
+        image: nginx
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
